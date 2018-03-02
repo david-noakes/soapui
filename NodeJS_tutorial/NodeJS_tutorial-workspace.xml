@@ -2,5 +2,6 @@
 <con:soapui-workspace name="NodeJS_tutorial" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:project name="REST Project express server api">D:/Warehouse/git_clones/soapui/NodeJS_tutorial/REST-Project-express-server-api-soapui-project.xml</con:project>
+  <con:project name="REST MEAN Stack Project">D:/Warehouse/git_clones/soapui/NodeJS_tutorial/REST-MEAN-Stack-Project-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
