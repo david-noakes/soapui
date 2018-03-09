@@ -2,4 +2,5 @@
 <con:soapui-workspace name="CIDM_NEO" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:project name="REST CIDM NEO v1">D:/Warehouse/git_clones/soapui/CIDM_Neo/REST-CIDM-NEO-v1-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
