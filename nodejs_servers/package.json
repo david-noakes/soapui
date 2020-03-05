@@ -1,6 +1,6 @@
 {
   "name": "soapui-rest-servers",
-  "version": "0.2.008",
+  "version": "0.2.009",
   "description": "generate a change log from git commits",
   "main": "changeLogGen.js",
   "scripts": {
