@@ -1,0 +1,11 @@
+{
+  "name": "soapui-rest-servers",
+  "version": "0.0.001",
+  "description": "generate a change log from git commits",
+  "main": "changeLogGen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Noakes",
+  "license": "ISC",
+}
