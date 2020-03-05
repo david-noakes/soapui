@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="451ffd1d-bf01-4e1f-961f-264381cccfab" activeEnvironment="Default" name="REST Project 2" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" defaultScriptLanguage="Javascript" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormBase Path">/</con:setting><con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormTarget Folder">C:\data\soapui-workspaces</con:setting><con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormFormat">json</con:setting><con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormAPI Version">1.0</con:setting><con:setting id="com.smartbear.swagger.ExportSwaggerAction$FormSwagger Version">2.0</con:setting></con:settings><con:interface xsi:type="con:RestService" id="0ad812bd-9092-40cc-ba85-d73c7febf356" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:3000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:3000</con:endpoint></con:endpoints><con:resource name="Api" path="/api/user/login" id="322646eb-3b08-40f9-bd61-05913bb66490"><con:settings/><con:parameters/><con:method name="Login" id="6651a403-acf6-4498-a811-6b7b0eb6bae7" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:log="http://localhost/api/login">log:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:log="http://localhost/api/login">log:Response</con:element></con:representation><con:request name="Request 1" id="9b30ed03-09e7-49b8-ac1b-23e01cce1135" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{ "email": "ndj@shadowlands.erehwon",
+  "password": "1@qW"
+}  </con:request><con:originalUri>http://localhost/api/login</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="posts" path="/api/posts" id="fd0bac57-542a-4cfb-be9d-cd7b5f537252"><con:settings/><con:parameters/><con:method name="Method 1" id="9bfd74e0-612b-42eb-9644-427c512710f5" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:pos="http://localhost/api/posts">pos:Response</con:element></con:representation><con:request name="Request 1" id="2f94f5d8-2e91-4d18-a304-873926772a63" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/posts</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="POST Posts" id="d6c47639-d621-4e8b-b137-446d9a22a26b" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>400 500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:pos="http://localhost/api/posts">pos:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:pos="http://localhost/api/posts">pos:Response</con:element></con:representation><con:request name="Request 1" id="a97ea104-a0e7-4248-b3f3-818cb2d9a5f9" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="heroes" path="/api/hero" id="fd0bac57-542a-4cfb-be9d-cd7b5f537252"><con:settings/><con:parameters/><con:method name="Method 1" id="9bfd74e0-612b-42eb-9644-427c512710f5" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:pos="http://localhost/api/posts">pos:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:pos="http://localhost/api/posts">pos:Fault</con:element></con:representation><con:request name="Request 1" id="2f94f5d8-2e91-4d18-a304-873926772a63" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/posts</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="POST Method" id="3f49a048-8e17-4610-b9f7-c093ab41e22b" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:hero="http://localhost/api/hero">hero:Response</con:element></con:representation><con:request name="Request 1" id="e447c90a-3fa8-4d63-bbda-13bfa4536a0a" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="recipes" path="/api/recipes" id="84d44793-6312-4ab7-b11d-bf48d6ed8934"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:resource name="PUT" path="{id}" id="4348bbfd-072e-429e-8ad6-4686e93ecd1a"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="Method 1" id="39c03329-2435-4167-94cd-84ce2c0243de" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:o4r="http://localhost/api/recipes/39O4r00sX9QPy0il">o4r:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:o4r="http://localhost/api/recipes/39O4r00sX9QPy0il">o4r:Fault</con:element></con:representation><con:request name="PUT recipe 1" id="bd93ee92-8924-4304-b020-10cb6c9eb763" mediaType="application/x-www-form-urlencoded" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request> {
+      "userId": "ccEyntYs5Gno9xO1",
+         "name": "Egg Plant and Fetta Pizza",
+         "description": "Yummy pizza that is easy to make in 20 minutes",
+         "imagePath": "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/frying-pan-pizza-easy-recipe-collection.jpg",
+         "ingredients":          [
+                        {
+               "name": "Pizza base",
+               "unit": "each",
+               "amount": 1
+            },
+                        {
+               "name": "Eggplant (Japanese)",
+               "unit": "each",
+               "amount": 1
+            },
+                        {
+               "name": "Pizza sauce",
+               "unit": "half cup",
+               "amount": 1
+            },
+                        {
+               "name": "Fetta cheese",
+               "unit": "block 200g",
+               "amount": 1
+            },
+                        {
+               "name": "Roma Tomatoes",
+               "unit": "each",
+               "amount": 4
+            },
+                        {
+               "name": "Fresh Rocket",
+               "unit": "small bunch",
+               "amount": 1
+            }
+         ],
+         "createDate": "20200219105805885",
+         "modifyDate": "20200219105805885",
+         "id": "39O4r00sX9QPy0il"
+      }</con:request><con:originalUri>http://localhost/api/recipes/39O4r00sX9QPy0il</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="39O4r00sX9QPy0il" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request><con:request name="PUT recipe 2" id="bd93ee92-8924-4304-b020-10cb6c9eb763" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="RecordRequestRepresentations">true</con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+         "name": "Spaghetti Marinara",
+         "description": "You can make this in the time it takes the pasta to cook",
+         "imagePath": "https://minimalistbaker.com/wp-content/uploads/2018/11/2-INGREDIENT-Sweet-Potato-Hashbrowns-1-pan-15-minutes-PERFECT-for-breakfast-scrambles-and-beyond-vegan-glutenfree-minimalistbaker-recipe-sweetpotato-hashbrowns-6-422x502.jpg",
+         "ingredients":          [
+                        {
+               "name": "Spaghetti No 7",
+               "unit": "30 grams",
+               "amount": 1
+            },
+                        {
+               "name": "Marinara Mix",
+               "unit": "jar",
+               "amount": 1
+            },
+                        {
+               "name": "Roma Tomatoes",
+               "unit": "each",
+               "amount": 6
+            },
+                        {
+               "name": "Garlic Chopped",
+               "unit": "clove",
+               "amount": 2
+            },
+                        {
+               "name": "Shallots chopped",
+               "unit": "each",
+               "amount": 3
+            }
+         ],
+         "createDate": "20200219110437755",
+         "modifyDate": "20200219110437755",
+         "id": "om7067T7T5NaBa6e"
+      }
+</con:request><con:originalUri>http://localhost/api/recipes/39O4r00sX9QPy0il</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="cEtgt7Mx1d0UkHna" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:method name="Method GET" id="b766928c-02ce-494b-839c-9c62bde958d4" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:rec="http://localhost/api/recipes">rec:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:rec="http://localhost/api/recipes">rec:Fault</con:element></con:representation><con:request name="GET all Request 1" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request><con:request name="GET one Request 1" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method><con:method name="Method POST" id="b766928c-02ce-494b-839c-9c62bde958d4" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:rec="http://localhost/api/recipes">rec:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500 401</con:status><con:params/><con:element xmlns:rec="http://localhost/api/recipes">rec:Fault</con:element></con:representation><con:request name="POST request 1" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/x-www-form-urlencoded" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+"userId": "ccEyntYs5Gno9xO1"
+"name": "Egg Plant and Fetta Pizza",
+"description": "Yummy pizza that is easy to make in 20 minutes",
+"imagePath": "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/frying-pan-pizza-easy-recipe-collection.jpg",
+"ingredients": [
+{
+ "name": "Pizza base",
+ "unit": "each",
+ "amount":  1
+},
+{
+ "name": "Eggplant (Japanese)",
+ "unit": "each",
+ "amount": 1
+},
+{
+ "name": "Pizza sauce",
+ "unit": "half cup",
+ "amount": 1
+},
+{
+ "name": "Fetta cheese",
+ "unit": "block 200g",
+ "amount": 1
+},
+{
+ "name": "Roma Tomatoes",
+ "unit": "each",
+ "amount": 4
+},
+{
+ "name": "Fresh Rocket",
+ "unit": "small bunch",
+ "amount": 1
+}
+]
+}
+</con:request><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="tBA99QraD9Ym97y4" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request><con:request name="POST request 2" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+"userId": "ccEyntYs5Gno9xO1"
+"name": "Spaghetti Marinara",
+"description": "You can make this in the time it takes the pasta to cook",
+"imagePath": "https://minimalistbaker.com/wp-content/uploads/2018/11/2-INGREDIENT-Sweet-Potato-Hashbrowns-1-pan-15-minutes-PERFECT-for-breakfast-scrambles-and-beyond-vegan-glutenfree-minimalistbaker-recipe-sweetpotato-hashbrowns-6-422x502.jpg",
+"ingredients": [
+{
+ "name": "Spaghetti No 7",
+ "unit": "30 grams",
+ "amount":  1
+},
+{
+ "name": "Marinara Mix",
+ "unit": "jar",
+ "amount": 1
+},
+{
+ "name": "Roma Tomatoes",
+ "unit": "each",
+ "amount": 6
+},
+{
+ "name": "Garlic Chopped",
+ "unit": "clove",
+ "amount": 2
+},
+{
+ "name": "Shallots chopped",
+ "unit": "each",
+ "amount": 3
+}
+]
+}
+</con:request><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="shoppinglists" path="/api/shoppinglists" id="1a578f03-83e7-4c4b-b4b4-0284de3d71fa"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:resource name="PUT" path="{id}" id="bd0743dd-064e-416d-a895-daef08ea032c"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="Method 1" id="a3d47c99-b884-4b4d-b7a2-74a8fa8ae221" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ath="http://localhost/api/shoppinglists/athZ9Mn7D05g90iy">ath:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401 500</con:status><con:params/><con:element xmlns:ath="http://localhost/api/shoppinglists/athZ9Mn7D05g90iy">ath:Fault</con:element></con:representation><con:request name="PUT shoppinglist 1" id="d01fefa0-515c-459a-ae82-20a14c4f7d69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request> {
+ 	      "userId": "ccEyntYs5Gno9xO1",
+      "ingredients":       [
+                  {
+            "name": "Pizza base",
+            "unit": "each",
+            "amount": 1
+         },
+                  {
+            "name": "Eggplant (Japanese)",
+            "unit": "each",
+            "amount": 1
+         },
+                  {
+            "name": "Roma Tomatoes",
+            "unit": "each",
+            "amount": 10
+         }
+      ],
+      "createDate": "20200219152626296",
+      "id": "yeauHjYsh4K2Tsoa"
+   }</con:request><con:originalUri>http://localhost/api/shoppinglists/athZ9Mn7D05g90iy</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="athZ9Mn7D05g90iy" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:method name="GET requests" id="90931de7-6d97-456d-9a02-d892411ab509" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:shop="http://localhost/api/shoppinglists">shop:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:shop="http://localhost/api/shoppinglists">shop:Fault</con:element></con:representation><con:request name="GET all Request 1" id="30c432ee-1a46-4bd9-a47c-d2da9e21b3bd" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request><con:request name="GET one" id="68c05d24-c03d-41cd-96b2-3fd70f6ffcac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="yeauHjYsh4K2Tsoa" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method><con:method name="POST method" id="a9d7e29c-b41b-4b7c-9094-e6aa27d47eda" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:shop="http://localhost/api/shoppinglists">shop:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:shop="http://localhost/api/shoppinglists">shop:Fault</con:element></con:representation><con:request name="POST shopping list 1" id="8c748550-256c-4450-bd8c-b99980a8d2bf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+	"userId": "tBA99QraD9Ym97y4",
+		"ingredients": [
+{
+ "name": "Pizza base",
+ "unit": "each",
+ "amount":  1
+},
+{
+ "name": "Eggplant (Japanese)",
+ "unit": "each",
+ "amount": 1
+},
+{
+ "name": "Roma Tomatoes",
+ "unit": "each",
+ "amount": 10
+}
+] 
+}
+</con:request><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method><con:method name="GET shoppinglist by user" id="90f3ae6a-5130-43ce-bd06-7f3c0f006031" method="GET"><con:settings/><con:parameters><con:parameter><con:name>userId</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:shop="http://localhost/api/shoppinglists">shop:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:shop="http://localhost/api/shoppinglists">shop:Fault</con:element></con:representation><con:request name="Request 1" id="11469ea9-d7e1-42d9-a2cb-bdada86f737d" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="d988bd65-209f-4aef-a6f3-2f46b5407cff" name="TestSuite JsonDB Server"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="20311ea3-3471-44a1-b7af-cad27790d227" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET all recipes" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Method GET - GET all Request 1" id="f7c55da4-c36b-44f7-9958-ec626dcabdb3"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes" methodName="Method GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Method GET - GET all Request 1" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="399810d4-f7c1-49f8-93ac-3c8762f42e60" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET one recipe" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET one recipe" id="57bc3fa4-6e81-45d1-9998-d62c97028cce"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes" methodName="Method GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET one recipe" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="oW9yw477i9IkJ0cg" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="944306a7-83fd-4b54-bb49-8284464e5b2b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POST recipe" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="POST recipe 1" id="7f614cf2-dfd0-41e7-8f00-a6c83325bd91"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes" methodName="Method POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST recipe 1" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+"name": "Egg Plant and Fetta Pizza",
+"description": "Yummy pizza that is easy to make in 20 minutes",
+"imagePath": "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/frying-pan-pizza-easy-recipe-collection.jpg",
+"ingredients": [
+{
+ "name": "Pizza base",
+ "unit": "each",
+ "amount":  1
+},
+{
+ "name": "Eggplant (Japanese)",
+ "unit": "each",
+ "amount": 1
+},
+{
+ "name": "Pizza sauce",
+ "unit": "half cup",
+ "amount": 1
+},
+{
+ "name": "Fetta cheese",
+ "unit": "block 200g",
+ "amount": 1
+},
+{
+ "name": "Roma Tomatoes",
+ "unit": "each",
+ "amount": 4
+},
+{
+ "name": "Fresh Rocket",
+ "unit": "small bunch",
+ "amount": 1
+}
+]
+}
+</con:request><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="POST recipe 2" id="2b386a33-2b84-41ca-90e8-82391efc6a17"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes" methodName="Method POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST recipe 2" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+"name": "Spaghetti Marinara",
+"description": "You can make this in the time it takes the pasta to cook",
+"imagePath": "https://minimalistbaker.com/wp-content/uploads/2018/11/2-INGREDIENT-Sweet-Potato-Hashbrowns-1-pan-15-minutes-PERFECT-for-breakfast-scrambles-and-beyond-vegan-glutenfree-minimalistbaker-recipe-sweetpotato-hashbrowns-6-422x502.jpg",
+"ingredients": [
+{
+ "name": "Spaghetti No 7",
+ "unit": "30 grams",
+ "amount":  1
+},
+{
+ "name": "Marinara Mix",
+ "unit": "jar",
+ "amount": 1
+},
+{
+ "name": "Roma Tomatoes",
+ "unit": "each",
+ "amount": 6
+},
+{
+ "name": "Garlic Chopped",
+ "unit": "clove",
+ "amount": 2
+},
+{
+ "name": "Shallots chopped",
+ "unit": "each",
+ "amount": 3
+}
+]
+}
+</con:request><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>userId</con:name><con:value>"ccEyntYs5Gno9xO1"</con:value></con:property></con:properties></con:testCase><con:testCase id="29b1de05-76c1-4e89-8de7-5f46d9e97d8f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PUT recipe" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Method 1 - PUT recipe 1" id="1c138ba0-dd88-4b9a-8d88-c47af9c51f37"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Method 1 - PUT recipe 1" id="bd93ee92-8924-4304-b020-10cb6c9eb763" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+      "name": "Egg Plant and Fetta Pizza",
+      "description": "Yummy pizza that is easy to make in 15 minutes",
+      "imagePath": "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/frying-pan-pizza-easy-recipe-collection.jpg",
+      "ingredients":       [
+                  {
+            "name": "Pizza base",
+            "unit": "each",
+            "amount": 1
+         },
+                  {
+            "name": "Eggplant (Japanese)",
+            "unit": "each",
+            "amount": 1
+         },
+                  {
+            "name": "Pizza sauce",
+            "unit": "half cup",
+            "amount": 1
+         },
+                  {
+            "name": "Fetta cheese",
+            "unit": "block 200g",
+            "amount": 1
+         },
+                  {
+            "name": "Roma Tomatoes",
+            "unit": "each",
+            "amount": 4
+         },
+                  {
+            "name": "Fresh Rocket",
+            "unit": "small bunch",
+            "amount": 1
+         }
+      ],
+      "createDate": "20200220121141312",
+      "modifyDate": "20200220121141312",
+      "id": "${#id}",
+      "creator": "${#TestSuite#ZOD_uid}"
+   }</con:request><con:originalUri>http://localhost/api/recipes/39O4r00sX9QPy0il</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="oW9yw477i9IkJ0cg" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Method 1 - PUT recipe 2" id="beb3a36e-6068-4b62-8c69-f05b5fc502f2"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Method 1 - PUT recipe 2" id="bd93ee92-8924-4304-b020-10cb6c9eb763" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+         "name": "Spaghetti Marinara",
+         "description": "You can make this in the time it takes the pasta to cook (12 minutes)",
+         "imagePath": "https://minimalistbaker.com/wp-content/uploads/2018/11/2-INGREDIENT-Sweet-Potato-Hashbrowns-1-pan-15-minutes-PERFECT-for-breakfast-scrambles-and-beyond-vegan-glutenfree-minimalistbaker-recipe-sweetpotato-hashbrowns-6-422x502.jpg",
+         "ingredients":          [
+                        {
+               "name": "Spaghetti No 7",
+               "unit": "30 grams",
+               "amount": 1
+            },
+                        {
+               "name": "Marinara Mix",
+               "unit": "jar",
+               "amount": 1
+            },
+                        {
+               "name": "Roma Tomatoes",
+               "unit": "each",
+               "amount": 6
+            },
+                        {
+               "name": "Garlic Chopped",
+               "unit": "clove",
+               "amount": 2
+            },
+                        {
+               "name": "Shallots chopped",
+               "unit": "each",
+               "amount": 3
+            }
+         ],
+         "createDate": "20200219110437755",
+         "modifyDate": "20200219110437755",
+         "id": "${#id}",
+	    "creator": "${#TestSuite#ZOD_uid}"
+      }
+</con:request><con:originalUri>http://localhost/api/recipes/39O4r00sX9QPy0il</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="azQJ6bXVmldr9Ph0" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2feffd59-a0e6-4269-8c1e-bbe67103a0c0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET all shoppinglists" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET all shoppinglists" id="535bdcd5-b24d-4db1-abe0-8dd636c5c499"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/shoppinglists" methodName="GET requests" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET all shoppinglists" id="30c432ee-1a46-4bd9-a47c-d2da9e21b3bd" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ae75fbd0-2a4d-4b9b-88da-23d61aed8c94" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET one shoppinglist" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET one shoppinglist" id="f04e0bc9-f660-45bf-801f-645b70b6dd5c"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/shoppinglists" methodName="GET requests" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET one shoppinglist" id="68c05d24-c03d-41cd-96b2-3fd70f6ffcac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="${#TestCase#id}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET shoppinglist by user" id="cad877ae-a7e9-43ef-8427-db4e013e81c1"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/shoppinglists" methodName="GET shoppinglist by user" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET shoppinglist by user" id="11469ea9-d7e1-42d9-a2cb-bdada86f737d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="userId" value="ccEyntYs5Gno9xO1" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>userId</con:name><con:value>ccEyntYs5Gno9xO1</con:value></con:property><con:property><con:name>id</con:name><con:value>444ky8sVMZuv43G5</con:value></con:property></con:properties></con:testCase><con:testCase id="704e94fe-6a13-4c3a-a51c-b127410301ce" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POST one shoppinglist" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="POST shopping list 1" id="01e3259e-de58-49a4-a366-77b6d4991ceb"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/shoppinglists" methodName="POST method" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST shopping list 1" id="8c748550-256c-4450-bd8c-b99980a8d2bf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+		"ingredients": [
+{
+ "name": "Pizza base",
+ "unit": "each",
+ "amount":  1
+},
+{
+ "name": "Eggplant (Japanese)",
+ "unit": "each",
+ "amount": 1
+},
+{
+ "name": "Roma Tomatoes",
+ "unit": "each",
+ "amount": 10
+}
+] 
+}
+</con:request><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>userId</con:name><con:value>"ccEyntYs5Gno9xO1"</con:value></con:property></con:properties></con:testCase><con:testCase id="947564c1-abe4-49f5-aed7-fbdf9c209b12" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PUT one shoppinglist" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="PUT shoppinglist 1" id="6ca6955b-51a6-425c-babd-e30a20d0b530"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/shoppinglists/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUT shoppinglist 1" id="d01fefa0-515c-459a-ae82-20a14c4f7d69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request> {
+      "ingredients":       [
+                  {
+            "name": "Pizza base",
+            "unit": "each",
+            "amount": 1
+         },
+                  {
+            "name": "Eggplant (Japanese)",
+            "unit": "each",
+            "amount": 1
+         },
+                  {
+            "name": "Roma Tomatoes",
+            "unit": "each",
+            "amount": 12
+         }
+      ],
+      "createDate": "20200219152626296",
+      "modifyDate": "20200220122846072",
+      "creator": "${#TestSuite#ZOD_uid}",
+      "id": "${#id}"
+   }</con:request><con:originalUri>http://localhost/api/shoppinglists/athZ9Mn7D05g90iy</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="444ky8sVMZuv43G5" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c6eb89fa-34bd-4ea7-892d-1f104b3c085a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POST Hero" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="POST Hero - Request 1" id="774b395b-1078-4c8a-b8b7-b27e241424d5"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/hero" methodName="POST Method" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST Hero - Request 1" id="e447c90a-3fa8-4d63-bbda-13bfa4536a0a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+ "name": "Mediteranean Pizza"
+}</con:request><con:originalUri>http://localhost/api/hero</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="edba163b-ac60-4671-94c2-15fc92da5f4b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POST post" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="POST Posts - Request 1" id="d072dbbc-d303-4203-a3c1-344fc26dec63"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/posts" methodName="POST Posts" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST Posts - Request 1" id="a97ea104-a0e7-4248-b3f3-818cb2d9a5f9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+"title":"test add product",
+"content":"you gotta see the size of this",
+"imagePath":"http://nuris.com.au/assets/images/home/pome-01.jpg",
+"imageName":"pome-01.jpg"
+}</con:request><con:originalUri>http://localhost/api/posts</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>ZOD_Token</con:name><con:value>${#Global#ZOD_Token_JBD}</con:value></con:property><con:property><con:name>NDJ_Token</con:name><con:value>${#Global#NDJ_Token_JBD}</con:value></con:property><con:property><con:name>ZOD_uid</con:name><con:value>${#Global#ZOD_uid_JBD}</con:value></con:property><con:property><con:name>NDJ_uid</con:name><con:value>${#Global#NDJ_uid_JBD}</con:value></con:property></con:properties></con:testSuite><con:testSuite id="e339c0cc-f82e-4c31-beca-496cd9d2e0d1" name="TestSuite MongoDB Server"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="687f9b98-8e7d-43d0-942c-357e8d405bfd" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET all recipes" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Method GET - GET all Request 1" id="cdcd1946-b317-4a74-abc6-76f35bdbf37a"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes" methodName="Method GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Method GET - GET all Request 1" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="26bd3dd9-667d-47a1-a1c5-acd0ac398798" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET one recipe" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET one recipe" id="9fdb6c99-2b20-4e55-952f-d29718e5b187"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes" methodName="Method GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET one recipe" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="oW9yw477i9IkJ0cg" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="cedf827c-8572-4bd7-a91e-0f47f967abbb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POST recipe" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="POST recipe 1" id="9e8ebadd-9d4a-4ce2-b7d6-449d8cf7eaed"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes" methodName="Method POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST recipe 1" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+"name": "Egg Plant and Fetta Pizza",
+"description": "Yummy pizza that is easy to make in 20 minutes",
+"imagePath": "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/frying-pan-pizza-easy-recipe-collection.jpg",
+"ingredients": [
+{
+ "name": "Pizza base",
+ "unit": "each",
+ "amount":  1
+},
+{
+ "name": "Eggplant (Japanese)",
+ "unit": "each",
+ "amount": 1
+},
+{
+ "name": "Pizza sauce",
+ "unit": "half cup",
+ "amount": 1
+},
+{
+ "name": "Fetta cheese",
+ "unit": "block 200g",
+ "amount": 1
+},
+{
+ "name": "Roma Tomatoes",
+ "unit": "each",
+ "amount": 4
+},
+{
+ "name": "Fresh Rocket",
+ "unit": "small bunch",
+ "amount": 1
+}
+]
+}
+</con:request><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="POST recipe 2" id="3b484289-5399-42bd-8771-859cc3474948"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes" methodName="Method POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST recipe 2" id="081d3e30-d964-427f-a522-871384044bc6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+"name": "Spaghetti Marinara",
+"description": "You can make this in the time it takes the pasta to cook",
+"imagePath": "https://minimalistbaker.com/wp-content/uploads/2018/11/2-INGREDIENT-Sweet-Potato-Hashbrowns-1-pan-15-minutes-PERFECT-for-breakfast-scrambles-and-beyond-vegan-glutenfree-minimalistbaker-recipe-sweetpotato-hashbrowns-6-422x502.jpg",
+"ingredients": [
+{
+ "name": "Spaghetti No 7",
+ "unit": "30 grams",
+ "amount":  1
+},
+{
+ "name": "Marinara Mix",
+ "unit": "jar",
+ "amount": 1
+},
+{
+ "name": "Roma Tomatoes",
+ "unit": "each",
+ "amount": 6
+},
+{
+ "name": "Garlic Chopped",
+ "unit": "clove",
+ "amount": 2
+},
+{
+ "name": "Shallots chopped",
+ "unit": "each",
+ "amount": 3
+}
+]
+}
+</con:request><con:originalUri>http://localhost/api/recipes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>userId</con:name><con:value>"ccEyntYs5Gno9xO1"</con:value></con:property></con:properties></con:testCase><con:testCase id="68140bb6-d7fa-401a-bb52-57acdf650001" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PUT recipe" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Method 1 - PUT recipe 1" id="4ff100c4-ec24-4867-aa4c-ba8b28159c15"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Method 1 - PUT recipe 1" id="bd93ee92-8924-4304-b020-10cb6c9eb763" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+      "name": "Egg Plant and Fetta Pizza",
+      "description": "Yummy pizza that is easy to make in 15 minutes",
+      "imagePath": "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/frying-pan-pizza-easy-recipe-collection.jpg",
+      "ingredients":       [
+                  {
+            "name": "Pizza base",
+            "unit": "each",
+            "amount": 1
+         },
+                  {
+            "name": "Eggplant (Japanese)",
+            "unit": "each",
+            "amount": 1
+         },
+                  {
+            "name": "Pizza sauce",
+            "unit": "half cup",
+            "amount": 1
+         },
+                  {
+            "name": "Fetta cheese",
+            "unit": "block 200g",
+            "amount": 1
+         },
+                  {
+            "name": "Roma Tomatoes",
+            "unit": "each",
+            "amount": 4
+         },
+                  {
+            "name": "Fresh Rocket",
+            "unit": "small bunch",
+            "amount": 1
+         }
+      ],
+      "createDate": "20200220121141312",
+      "modifyDate": "20200220121141312",
+      "id": "${#id}",
+      "creator": "${#TestSuite#ZOD_uid}"
+   }</con:request><con:originalUri>http://localhost/api/recipes/39O4r00sX9QPy0il</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="oW9yw477i9IkJ0cg" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Method 1 - PUT recipe 2" id="df952061-e640-4b97-9f85-e1cbe975891c"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/recipes/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Method 1 - PUT recipe 2" id="bd93ee92-8924-4304-b020-10cb6c9eb763" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+         "name": "Spaghetti Marinara",
+         "description": "You can make this in the time it takes the pasta to cook (12 minutes)",
+         "imagePath": "https://minimalistbaker.com/wp-content/uploads/2018/11/2-INGREDIENT-Sweet-Potato-Hashbrowns-1-pan-15-minutes-PERFECT-for-breakfast-scrambles-and-beyond-vegan-glutenfree-minimalistbaker-recipe-sweetpotato-hashbrowns-6-422x502.jpg",
+         "ingredients":          [
+                        {
+               "name": "Spaghetti No 7",
+               "unit": "30 grams",
+               "amount": 1
+            },
+                        {
+               "name": "Marinara Mix",
+               "unit": "jar",
+               "amount": 1
+            },
+                        {
+               "name": "Roma Tomatoes",
+               "unit": "each",
+               "amount": 6
+            },
+                        {
+               "name": "Garlic Chopped",
+               "unit": "clove",
+               "amount": 2
+            },
+                        {
+               "name": "Shallots chopped",
+               "unit": "each",
+               "amount": 3
+            }
+         ],
+         "createDate": "20200219110437755",
+         "modifyDate": "20200219110437755",
+         "id": "${#id}",
+	    "creator": "${#TestSuite#ZOD_uid}"
+      }
+</con:request><con:originalUri>http://localhost/api/recipes/39O4r00sX9QPy0il</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="azQJ6bXVmldr9Ph0" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2bfcb8b9-ba59-4d87-b3bc-c478ba071e9a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET all shoppinglists" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET all shoppinglists" id="fffbfad6-41dd-4b16-876b-d6659c0293c0"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/shoppinglists" methodName="GET requests" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET all shoppinglists" id="30c432ee-1a46-4bd9-a47c-d2da9e21b3bd" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="86b15cfb-c3cb-46db-a5c5-baf2c7d1f54c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET one shoppinglist" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET one shoppinglist" id="b855239b-d7f0-4edf-b202-c313409e56f2"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/shoppinglists" methodName="GET requests" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET one shoppinglist" id="68c05d24-c03d-41cd-96b2-3fd70f6ffcac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="${#TestCase#id}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GET shoppinglist by user" id="b6952592-0aae-4067-9f08-05cc270e764c"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/shoppinglists" methodName="GET shoppinglist by user" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET shoppinglist by user" id="11469ea9-d7e1-42d9-a2cb-bdada86f737d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="userId" value="ccEyntYs5Gno9xO1" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>userId</con:name><con:value>ccEyntYs5Gno9xO1</con:value></con:property><con:property><con:name>id</con:name><con:value>444ky8sVMZuv43G5</con:value></con:property></con:properties></con:testCase><con:testCase id="c44f2411-c1d1-424e-a2fd-4ceaa7a2ac3b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POST one shoppinglist" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="POST shopping list 1" id="75300728-1d3f-4c26-850c-1e5b22b0db7a"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/shoppinglists" methodName="POST method" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST shopping list 1" id="8c748550-256c-4450-bd8c-b99980a8d2bf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+		"ingredients": [
+{
+ "name": "Pizza base",
+ "unit": "each",
+ "amount":  1
+},
+{
+ "name": "Eggplant (Japanese)",
+ "unit": "each",
+ "amount": 1
+},
+{
+ "name": "Roma Tomatoes",
+ "unit": "each",
+ "amount": 10
+}
+] 
+}
+</con:request><con:originalUri>http://localhost/api/shoppinglists</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>userId</con:name><con:value>"ccEyntYs5Gno9xO1"</con:value></con:property></con:properties></con:testCase><con:testCase id="c9a5e0aa-561d-403d-b2ab-b10b7878bf73" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PUT one shoppinglist" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="PUT shoppinglist 1" id="dcbcad91-00aa-4b81-a319-ad38ec79045f"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/shoppinglists/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUT shoppinglist 1" id="d01fefa0-515c-459a-ae82-20a14c4f7d69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request> {
+      "ingredients":       [
+                  {
+            "name": "Pizza base",
+            "unit": "each",
+            "amount": 1
+         },
+                  {
+            "name": "Eggplant (Japanese)",
+            "unit": "each",
+            "amount": 1
+         },
+                  {
+            "name": "Roma Tomatoes",
+            "unit": "each",
+            "amount": 12
+         }
+      ],
+      "createDate": "20200219152626296",
+      "modifyDate": "20200220122846072",
+      "creator": "${#TestSuite#ZOD_uid}",
+      "id": "${#id}"
+   }</con:request><con:originalUri>http://localhost/api/shoppinglists/athZ9Mn7D05g90iy</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="444ky8sVMZuv43G5" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="eed49232-ad55-49d0-a02f-27ad3c1b4f5c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POST Hero" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="POST Hero - Request 1" id="be6bceb7-1a19-47f0-bc7a-ad625eb2953f"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/hero" methodName="POST Method" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST Hero - Request 1" id="e447c90a-3fa8-4d63-bbda-13bfa4536a0a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+ "name": "Mediteranean Pizza"
+}</con:request><con:originalUri>http://localhost/api/hero</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d56aaa6c-99e0-441b-a5c1-b5d59f1718c3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POST post" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="POST Posts - Request 1" id="407aeb9a-5485-4a81-be30-7f6217d52b8c"><con:settings/><con:config service="http://localhost:3000" resourcePath="/api/posts" methodName="POST Posts" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST Posts - Request 1" id="a97ea104-a0e7-4248-b3f3-818cb2d9a5f9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestSuite#ZOD_Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+"title":"test add product",
+"content":"you gotta see the size of this",
+"imagePath":"http://nuris.com.au/assets/images/home/pome-01.jpg",
+"imageName":"pome-01.jpg"
+}</con:request><con:originalUri>http://localhost/api/posts</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>ZOD_Token</con:name><con:value>${#Global#ZOD_Token_MDB}</con:value></con:property><con:property><con:name>NDJ_Token</con:name><con:value>${#Global#NDJ_Token_MDB}</con:value></con:property><con:property><con:name>ZOD_uid</con:name><con:value>${#Global#ZOD_uid_MDB}</con:value></con:property><con:property><con:name>NDJ_uid</con:name><con:value>${#Global#NDJ_uid_MDB}</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
