@@ -3,5 +3,7 @@
   <con:settings/>
   <con:project name="REST Project 1">T:/SOAP/soapui/nodejs_servers/REST-mean_or_jsondb_server.xml</con:project>
   <con:project name="REST Project 2">T:/SOAP/soapui/nodejs_servers/REST-Project-2-soapui-project.xml</con:project>
+  <con:project name="REST Project 3">T:/SOAP/soapui/nodejs_servers/REST-Project-3-soapui-project.xml</con:project>
+  <con:project name="REST Project MRMS2020">T:/SOAP/soapui/nodejs_servers/REST-Project-MRMS2020-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>

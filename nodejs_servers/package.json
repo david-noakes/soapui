@@ -1,6 +1,6 @@
 {
-  "name": "soapui-rest-servers",
-  "version": "0.2.010",
+  "name": "SOAP-UI Testing",
+  "version": "0.03.001-0006",
   "description": "generate a change log from git commits",
   "main": "changeLogGen.js",
   "scripts": {
