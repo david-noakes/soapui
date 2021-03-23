@@ -1,6 +1,6 @@
 {
   "name": "SOAP-UI Testing",
-  "version": "0.03.013-004",
+  "version": "0.03.013-005",
   "description": "generate a change log from git commits",
   "main": "changeLogGen.js",
   "scripts": {
