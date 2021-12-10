@@ -6,5 +6,7 @@
   <con:project name="REST Project 3">T:/SOAP/soapui/nodejs_servers/REST-Project-3-soapui-project.xml</con:project>
   <con:project name="REST Project CRMS21">T:/SOAP/soapui/nodejs_servers/REST-Project-CRMS21-soapui-project.xml</con:project>
   <con:project name="REST Project MRMS2020">T:/SOAP/soapui/nodejs_servers/REST-Project-MRMS2020-soapui-project.xml</con:project>
+  <con:project name="REST Project MRMS2020_2">T:/SOAP/soapui/nodejs_servers/REST-Project-MRMS2020-W-soapui-project.xml</con:project>
+  <con:project name="REST Project swagger api">T:/SOAP/soapui/nodejs_servers/REST-Project-swagger-api-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
