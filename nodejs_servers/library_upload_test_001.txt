@@ -1,0 +1,6 @@
+{
+"title": "Lightbearer revisited",
+"document_name": "LightBearer_epub_Export",
+"document_category": "test",
+"blurb": "tales of Apollo Lukeios"
+}
